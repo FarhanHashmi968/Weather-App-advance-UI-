@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(/image/background\ pic1.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(78, 71, 71);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    margin-block: 10px;
+}
+
+.heading img {
+    width: 25px;
+    margin-inline: 5px;
+}
+
+.heading h1 {
+    color: white;
+    font-size: 30px;
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-block: 10px;
+}
+
+.searchbar input[type="text"] {
+    width: 30vw;
+    padding: 10px;
+    outline: none;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+.searchbar input[type="button"] {
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: none;
+    margin-inline: 10px;
+    background-color: rgb(136, 125, 125);
+    color: white;
+    cursor: pointer;
+}
+
+.resultCard {
+    border: 2px solid purple;
+    width: 50vw;
+    background-color: white;
+    padding: 15px;
+    display: none;
+    transition: all 0.6s ease-out;
+}
+
+.location {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.cardinformation {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.time {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(158, 150, 150);
+    padding-bottom: 10px;
+}
+
+.temp {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.temperature {
+    display: flex;
+    align-items: center;
+}
+
+.temperature img {
+    width: 55px;
+    margin: 20px;
+}
+
+.temperature span {
+    font-size: 35px;
+}
+
+.dataSummary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card1 {
+    width: 24vw;
+}
+
+.card2 {
+    width: 24vw;
+}
+
+.windgusts,
+.humidity,
+.pressure,
+.visibility,
+.windspeed,
+.sealevel {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+.windgusts,
+.humidity,
+.visibility,
+.windspeed {
+    border-bottom: 1px solid rgb(158, 150, 150);
+}
